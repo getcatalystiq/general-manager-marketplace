@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "tms": {
+      "type": "http",
+      "url": "${TMS_MCP_URL:-https://mcp.tms.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${TMS_ACCESS_TOKEN}",
+        "X-Tenant-ID": "${TMS_TENANT_ID}"
+      }
+    },
+    "carrier-api": {
+      "type": "http",
+      "url": "${CARRIER_MCP_URL:-https://mcp.carrier-integrations.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${CARRIER_ACCESS_TOKEN}"
+      }
+    },
+    "customs": {
+      "type": "http",
+      "url": "${CUSTOMS_MCP_URL:-https://mcp.customs.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${CUSTOMS_ACCESS_TOKEN}",
+        "X-Broker-ID": "${CUSTOMS_BROKER_ID}"
+      }
+    },
+    "rates-db": {
+      "type": "http",
+      "url": "${RATES_MCP_URL:-https://mcp.rates-database.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${RATES_ACCESS_TOKEN}"
+      }
+    },
+    "tracking": {
+      "type": "http",
+      "url": "${TRACKING_MCP_URL:-https://mcp.shipment-tracking.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${TRACKING_ACCESS_TOKEN}"
+      }
+    }
+  }
+}

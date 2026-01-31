@@ -1,0 +1,8 @@
+{
+  "name": "general-manager-freight-forwarders",
+  "version": "0.1.0",
+  "description": "Manage freight forwarding operations with AI-powered shipment tracking, rate analysis, customs documentation, and carrier management. Streamline logistics workflows and optimize your supply chain.",
+  "author": {
+    "name": "General Manager"
+  }
+}

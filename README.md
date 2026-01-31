@@ -7,6 +7,7 @@ A Claude Cowork plugin suite for managing businesses with AI-powered insights an
 | Plugin | Description |
 |--------|-------------|
 | [**online-business**](./online-business) | Online Business - Ads and Content: Manage growth with analysis of ads, content, funnels, and metrics |
+| [**freight-forwarders**](./freight-forwarders) | Freight Forwarders: Manage shipment tracking, rate analysis, customs, and carrier management |
 
 ## Installation
 
