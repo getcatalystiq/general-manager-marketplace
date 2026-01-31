@@ -1,5 +1,5 @@
 ---
-title: General Manager Plugin Suite - SaaS Growth Management for Claude Cowork
+title: General Manager Plugin Suite - Online Business Growth Management for Claude Cowork
 type: feat
 date: 2026-01-31
 status: in-progress
@@ -9,7 +9,7 @@ status: in-progress
 
 ## Overview
 
-A **Claude Cowork plugin suite** for managing businesses with AI-powered insights. Starting with the **SaaS vertical** focused on growth metrics, ad optimization, content strategy, and funnel analysis.
+A **Claude Cowork plugin suite** for managing businesses with AI-powered insights. Starting with the **Online Business - Ads and Content** vertical focused on growth metrics, ad optimization, content strategy, and funnel analysis.
 
 ## Repository Structure
 
@@ -19,7 +19,7 @@ Following the [Anthropic knowledge-work-plugins](https://github.com/anthropics/k
 general-manager/
 ├── .claude-plugin/
 │   └── marketplace.json      # Lists all vertical plugins
-├── saas/                     # SaaS vertical plugin (MVP)
+├── online-business/          # Online Business - Ads and Content plugin (MVP)
 │   ├── .claude-plugin/
 │   │   └── plugin.json       # Plugin metadata
 │   ├── commands/             # User-invocable slash commands
@@ -38,14 +38,14 @@ general-manager/
     └── plans/
 ```
 
-## SaaS Plugin Commands
+## Online Business Plugin Commands
 
 | Command | Description | Connectors |
 |---------|-------------|------------|
 | `/analyze-ads` | Google Ads performance, CAC by keyword, optimization recommendations | ~~google-ads |
 | `/analyze-content` | Content performance, signup attribution, SEO opportunities | ~~analytics |
 | `/analyze-funnel` | Conversion funnels, drop-off analysis, A/B test results | ~~analytics, ~~database |
-| `/track-growth` | MRR, churn, LTV, CAC, cohort analysis with proper SaaS calculations | ~~stripe, ~~google-ads |
+| `/track-growth` | MRR, churn, LTV, CAC, cohort analysis with proper calculations | ~~stripe, ~~google-ads |
 
 ## MCP Connectors
 
@@ -65,7 +65,7 @@ general-manager/
 ### Completed
 - [x] Repository structure following Cowork plugin standard
 - [x] Root marketplace.json with plugin listing
-- [x] SaaS plugin structure (.claude-plugin, commands, skills)
+- [x] Online Business plugin structure (.claude-plugin, commands, skills)
 - [x] `/analyze-ads` command implementation
 - [x] `/analyze-content` command implementation
 - [x] `/analyze-funnel` command implementation
@@ -73,13 +73,13 @@ general-manager/
 - [x] CONNECTORS.md documentation
 - [x] .mcp.json connector configuration
 - [x] Plugin and repository README files
-
-### Next Steps
 - [x] Add background skills (SaaS metrics, pricing strategy, customer success)
 - [x] Convert MCPs to HTTP-based endpoints
+
+### Next Steps
 - [ ] Test plugin installation in Claude Cowork
 - [ ] Create connector setup guides with screenshots
-- [ ] Beta testing with real SaaS operators
+- [ ] Beta testing with real online business operators
 - [ ] Iterate on commands based on feedback
 
 ## Key Design Decisions
@@ -96,7 +96,7 @@ Commands use `~~connector-name` syntax to reference connectors:
 ### 3. Graceful Degradation
 All commands work without full connector setup—users can paste data, upload files, or describe metrics manually.
 
-### 4. SaaS-Native Calculations
+### 4. Business-Native Calculations
 - MRR with expansion/contraction/churn breakdown (not just subscription sum)
 - LTV using retention curves (not simple ARPU/churn)
 - Cohort analysis with proper time-based tracking
@@ -104,7 +104,7 @@ All commands work without full connector setup—users can paste data, upload fi
 
 ## Future Verticals
 
-Once SaaS vertical is validated:
+Once Online Business vertical is validated:
 - **restaurant** — POS integration, menu engineering, staff scheduling
 - **retail** — E-commerce analytics, inventory optimization, customer segments
 - **professional-services** — Project management, time tracking, client relationships

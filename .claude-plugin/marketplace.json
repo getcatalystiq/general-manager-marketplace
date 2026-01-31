@@ -5,9 +5,9 @@
   },
   "plugins": [
     {
-      "name": "saas",
-      "source": "./saas",
-      "description": "Manage your SaaS business growth with AI-powered analysis of Google Ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds."
+      "name": "online-business",
+      "source": "./online-business",
+      "description": "Manage your online business growth with AI-powered analysis of ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds."
     }
   ]
 }

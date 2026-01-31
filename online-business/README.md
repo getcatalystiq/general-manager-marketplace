@@ -1,6 +1,6 @@
-# General Manager — SaaS
+# General Manager — Online Business - Ads and Content
 
-Manage your SaaS business growth with AI-powered analysis of Google Ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds.
+Manage your online business growth with AI-powered analysis of ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds.
 
 ## Commands
 
@@ -9,7 +9,7 @@ Manage your SaaS business growth with AI-powered analysis of Google Ads, content
 | `/analyze-ads` | Analyze Google Ads performance, identify wasteful spend, get optimization recommendations |
 | `/analyze-content` | Analyze content performance, identify what drives signups, plan content strategy |
 | `/analyze-funnel` | Analyze conversion funnels, identify drop-off points, optimize signup flow |
-| `/track-growth` | Track MRR, churn, LTV, CAC, cohort analysis with proper SaaS calculations |
+| `/track-growth` | Track MRR, churn, LTV, CAC, cohort analysis with proper calculations |
 
 ## Quick Start
 
@@ -23,7 +23,7 @@ Manage your SaaS business growth with AI-powered analysis of Google Ads, content
 
 ## Connectors
 
-This plugin integrates with your SaaS growth stack:
+This plugin integrates with your online business growth stack:
 
 - **Google Ads** — Campaign performance, keyword data, CAC by campaign
 - **Google Analytics 4** — Traffic sources, conversion funnels, content performance
@@ -67,7 +67,7 @@ Skills activate automatically when discussing related topics—no commands neede
 
 ## What Makes This Different
 
-- **SaaS-native metrics**: Proper MRR calculation with expansion/contraction, LTV using retention curves (not ARPU/churn), cohort analysis
+- **Business-native metrics**: Proper MRR calculation with expansion/contraction, LTV using retention curves (not ARPU/churn), cohort analysis
 - **Actionable recommendations**: Not just data dumps—specific actions with projected impact
 - **Connected insights**: See how ads → content → funnel → revenue connect
 - **Works without full setup**: Commands degrade gracefully when connectors aren't configured

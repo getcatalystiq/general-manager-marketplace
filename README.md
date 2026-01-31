@@ -6,7 +6,7 @@ A Claude Cowork plugin suite for managing businesses with AI-powered insights an
 
 | Plugin | Description |
 |--------|-------------|
-| [**saas**](./saas) | Manage SaaS growth with analysis of ads, content, funnels, and metrics |
+| [**online-business**](./online-business) | Online Business - Ads and Content: Manage growth with analysis of ads, content, funnels, and metrics |
 
 ## Installation
 
