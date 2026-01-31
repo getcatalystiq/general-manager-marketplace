@@ -53,9 +53,22 @@ See [CONNECTORS.md](CONNECTORS.md) for setup instructions.
 /analyze-content --type blog
 ```
 
+## Background Skills
+
+This plugin includes background knowledge that Claude automatically applies when relevant:
+
+| Skill | Description |
+|-------|-------------|
+| **SaaS Metrics** | Accurate MRR, churn, LTV, CAC calculations and benchmarks |
+| **Pricing Strategy** | Subscription pricing models, packaging, and optimization |
+| **Customer Success** | Retention, onboarding, expansion, and churn prevention |
+
+Skills activate automatically when discussing related topics—no commands needed.
+
 ## What Makes This Different
 
 - **SaaS-native metrics**: Proper MRR calculation with expansion/contraction, LTV using retention curves (not ARPU/churn), cohort analysis
 - **Actionable recommendations**: Not just data dumps—specific actions with projected impact
 - **Connected insights**: See how ads → content → funnel → revenue connect
 - **Works without full setup**: Commands degrade gracefully when connectors aren't configured
+- **HTTP-based MCPs**: All connectors use HTTP endpoints for easy integration

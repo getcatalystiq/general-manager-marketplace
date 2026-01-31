@@ -1,6 +1,32 @@
 # Connectors
 
-This plugin integrates with your SaaS growth stack through MCP (Model Context Protocol) connectors. Commands will automatically use connected services when available, or prompt you to provide data manually.
+This plugin integrates with your SaaS growth stack through HTTP-based MCP (Model Context Protocol) connectors. Commands will automatically use connected services when available, or prompt you to provide data manually.
+
+## Configuration
+
+All connectors use HTTP endpoints. Configure each connector by setting the required environment variables:
+
+```bash
+# Google Ads
+export GOOGLE_ADS_MCP_URL="https://your-mcp-endpoint.com/google-ads/v1"
+export GOOGLE_ADS_ACCESS_TOKEN="your-oauth-token"
+export GOOGLE_ADS_DEVELOPER_TOKEN="your-developer-token"
+export GOOGLE_ADS_CUSTOMER_ID="123-456-7890"
+
+# Google Analytics
+export GA4_MCP_URL="https://your-mcp-endpoint.com/analytics/v1"
+export GOOGLE_ACCESS_TOKEN="your-oauth-token"
+export GA4_PROPERTY_ID="properties/123456789"
+
+# Stripe
+export STRIPE_MCP_URL="https://your-mcp-endpoint.com/stripe/v1"
+export STRIPE_API_KEY="sk_live_..."
+
+# Database
+export DATABASE_MCP_URL="https://your-mcp-endpoint.com/database/v1"
+export DATABASE_ACCESS_TOKEN="your-access-token"
+export DATABASE_URL="postgresql://user:pass@host:5432/db"
+```
 
 ## Available Connectors
 
@@ -13,6 +39,8 @@ Connect to analyze:
 - Quality scores and optimization opportunities
 - Customer acquisition cost (CAC) by campaign
 
+**HTTP Endpoint:** `${GOOGLE_ADS_MCP_URL}`
+
 Setup: Requires Google Ads API access with read permissions. See [Google Ads API documentation](https://developers.google.com/google-ads/api/docs/start).
 
 ### ~~analytics
@@ -23,6 +51,8 @@ Connect to analyze:
 - Conversion funnels and drop-off points
 - Landing page performance
 - Content engagement metrics
+
+**HTTP Endpoint:** `${GA4_MCP_URL}`
 
 Setup: Requires GA4 property access. See [GA4 API documentation](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
@@ -35,6 +65,8 @@ Connect to analyze:
 - Customer Lifetime Value (LTV)
 - Subscription plan performance
 
+**HTTP Endpoint:** `${STRIPE_MCP_URL}`
+
 Setup: Requires Stripe API key with read permissions. See [Stripe API documentation](https://stripe.com/docs/api).
 
 ### ~~database
@@ -45,6 +77,8 @@ Connect to analyze:
 - Custom product metrics
 - Cohort analysis data
 - Feature usage analytics
+
+**HTTP Endpoint:** `${DATABASE_MCP_URL}`
 
 Setup: Requires database connection string with read permissions.
 

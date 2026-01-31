@@ -75,7 +75,8 @@ general-manager/
 - [x] Plugin and repository README files
 
 ### Next Steps
-- [ ] Add background skills (SaaS metrics knowledge, attribution models)
+- [x] Add background skills (SaaS metrics, pricing strategy, customer success)
+- [x] Convert MCPs to HTTP-based endpoints
 - [ ] Test plugin installation in Claude Cowork
 - [ ] Create connector setup guides with screenshots
 - [ ] Beta testing with real SaaS operators
