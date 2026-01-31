@@ -1,0 +1,13 @@
+{
+  "name": "general-manager",
+  "owner": {
+    "name": "General Manager"
+  },
+  "plugins": [
+    {
+      "name": "saas",
+      "source": "./saas",
+      "description": "Manage your SaaS business growth with AI-powered analysis of Google Ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds."
+    }
+  ]
+}
