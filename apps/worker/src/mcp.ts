@@ -242,11 +242,11 @@ async function processJsonRpc(mcpServer: ExtendedMcpServer, body: unknown): Prom
   }
 
   if (message.method === 'resources/list') {
-    // List available UI resources
+    // List available UI resources - use MCP Apps MIME type
     const resources = Object.keys(UI_RESOURCES).map(uri => ({
       uri,
       name: uri.replace('ui://gm/', ''),
-      mimeType: 'text/html'
+      mimeType: 'text/html;profile=mcp-app'
     }));
     return {
       jsonrpc: '2.0',
@@ -275,7 +275,7 @@ async function processJsonRpc(mcpServer: ExtendedMcpServer, body: unknown): Prom
       result: {
         contents: [{
           uri,
-          mimeType: 'text/html',
+          mimeType: 'text/html;profile=mcp-app',
           text: html
         }]
       },
