@@ -1,0 +1,51 @@
+name = "general-manager"
+main = "src/index.ts"
+compatibility_date = "2024-12-18"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "development"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "gm-db"
+database_id = "65ac4b5b-b720-4479-bfcc-643f346ff668"
+migrations_dir = "db/migrations"
+
+# Queues
+[[queues.producers]]
+queue = "gm-task-queue"
+binding = "TASK_QUEUE"
+
+[[queues.consumers]]
+queue = "gm-task-queue"
+max_batch_size = 10
+max_batch_timeout = 30
+max_retries = 3
+dead_letter_queue = "gm-task-dlq"
+
+[[queues.producers]]
+queue = "gm-task-dlq"
+binding = "TASK_DLQ"
+
+# Durable Objects
+[durable_objects]
+bindings = [
+  { name = "SESSIONS", class_name = "McpSession" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["McpSession"]
+
+# Scheduled Workers (cron for recurring tasks)
+[triggers]
+crons = ["0 * * * *"]
+
+# Environment-specific config
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.staging]
+vars = { ENVIRONMENT = "staging" }
