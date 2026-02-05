@@ -1,8 +1,8 @@
 {
   "name": "general-manager-online-business",
   "version": "0.1.0",
-  "description": "Manage your online business growth with AI-powered analysis of ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds.",
+  "description": "Your AI General Manager for online businesses. Scorecard of key metrics, AI-suggested actions with 3-scenario predictions, and multi-channel analysis — all in one plugin.",
   "author": {
-    "name": "General Manager"
+    "name": "CatalystIQ"
   }
 }

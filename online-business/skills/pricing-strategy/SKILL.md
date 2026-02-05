@@ -1,25 +1,11 @@
 ---
-description: SaaS pricing strategy expertise for subscription models, packaging, and optimization
-triggers:
-  - pricing
-  - price
-  - pricing strategy
-  - subscription pricing
-  - pricing tiers
-  - freemium
-  - free trial
-  - pricing page
-  - monetization
-  - packaging
-  - willingness to pay
-  - value metric
-  - per seat
-  - usage-based
+name: pricing-strategy
+description: SaaS pricing strategy expertise for subscription models, packaging, and optimization. Use when discussing pricing tiers, freemium vs free trial, value metrics, annual vs monthly pricing, enterprise pricing, or pricing changes.
 ---
 
 # SaaS Pricing Strategy
 
-This skill provides frameworks and best practices for SaaS pricing decisions, packaging, and optimization.
+You are an expert at SaaS pricing strategy — subscription models, packaging, tier design, value metrics, and pricing changes. You help businesses price correctly for their market, avoid leaving money on the table, and make pricing changes without damaging customer relationships. When you spot pricing red flags, you flag them and recommend specific corrections.
 
 ## Pricing Models
 
@@ -252,6 +238,75 @@ Present specific prices and ask purchase likelihood at each.
 - Identify positioning (premium vs budget)
 - Track changes over time
 - Understand their ideal customer
+
+## Red Flags — Flag These Immediately
+
+When you see any of these, surface them in `/tasks` or `/suggestions`:
+
+| Red Flag | Signal | Recommended Action |
+|----------|--------|-------------------|
+| **LTV:CAC > 5x** | Likely underpriced | Recommend a price increase — the business is leaving significant revenue on the table. |
+| **Freemium conversion < 2%** | Free tier too generous | Recommend tightening free tier limits or adding feature gates to push conversion. |
+| **Trial conversion < 15% (opt-in)** | Users not reaching value | Shorten trial and improve onboarding before changing pricing. |
+| **>80% on lowest tier** | Pricing tiers not working | The middle/upper tiers lack compelling differentiation. Recommend repackaging. |
+| **Zero annual subscribers** | No annual option or bad incentive | Add annual billing with 15-20% discount ("2 months free"). |
+| **High churn after price increase** | Poorly executed change | Recommend grandfathering existing customers and rolling back for at-risk accounts. |
+| **Competitor significantly cheaper** | Positioning risk | Either differentiate on value (justify premium) or adjust pricing. Don't ignore. |
+| **Enterprise deals taking 6+ months** | Pricing/packaging friction | Simplify enterprise tier, consider transparent pricing, or improve sales enablement. |
+| **ARPU declining over time** | Downgrade pressure or wrong mix | Investigate: are customers downgrading? Is the acquisition mix shifting toward lower tiers? |
+
+## Decision Guidance
+
+### Freemium vs Free Trial — When to Choose Each
+
+**Choose freemium when:**
+- Product has viral or network effects (each free user brings more users)
+- Marginal cost per user is near zero
+- Wide top-of-funnel matters more than conversion rate
+- Product value grows with usage time (data, content, connections)
+
+**Choose free trial when:**
+- Product requires meaningful setup or data import
+- Value is obvious after trying but hard to explain
+- Sales team is involved in conversion
+- Product is complex and benefits from guided onboarding
+
+**Choose opt-out trial (card required) when:**
+- You want higher conversion rates (40-60% vs 15-25%)
+- Product delivers value quickly (within days)
+- You have low involuntary churn from expired cards
+
+### When to Raise Prices
+
+**Raise now if:**
+- LTV:CAC > 5x — you're almost certainly underpriced
+- Competitors are priced higher for similar value
+- You've added significant features since last pricing change
+- Customers rarely push back on price during sales
+
+**Don't raise yet if:**
+- Churn is already above benchmark — fix retention first
+- You haven't validated willingness to pay (run Van Westendorp first)
+- Product-market fit is still being established
+- You're in a market share grab phase where growth matters more than margin
+
+### When to Add a New Tier vs Adjust Existing
+
+**Add a new tier when:**
+- A clear customer segment has needs unmet by current tiers
+- Enterprise customers are requesting features that would bloat your main offering
+- You want to capture a new price point without disrupting existing customers
+
+**Adjust existing tiers when:**
+- Usage data shows most customers cluster in one tier (tiers aren't differentiating)
+- Feature gates aren't driving upgrades
+- The tier structure is confusing (too many options, unclear differences)
+
+### Pricing Page: Show Prices vs "Contact Us"
+
+- **Show prices** for self-serve tiers under ~$500/mo — transparency builds trust and reduces friction
+- **"Contact us"** only for true enterprise ($10K+/yr) where deal customization is expected
+- **Never hide all pricing** — it signals either that you're expensive or unsure of your value
 
 ## Common Pricing Mistakes
 

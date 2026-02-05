@@ -31,6 +31,30 @@
         "Authorization": "Bearer ${DATABASE_ACCESS_TOKEN}",
         "X-Database-URL": "${DATABASE_URL}"
       }
+    },
+    "meta-ads": {
+      "type": "http",
+      "url": "${META_ADS_MCP_URL:-https://mcp.meta-ads.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${META_ADS_ACCESS_TOKEN}",
+        "X-Ad-Account-ID": "${META_ADS_ACCOUNT_ID}"
+      }
+    },
+    "reddit-ads": {
+      "type": "http",
+      "url": "${REDDIT_ADS_MCP_URL:-https://mcp.reddit-ads.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${REDDIT_ADS_ACCESS_TOKEN}",
+        "X-Ad-Account-ID": "${REDDIT_ADS_ACCOUNT_ID}"
+      }
+    },
+    "linkedin-ads": {
+      "type": "http",
+      "url": "${LINKEDIN_ADS_MCP_URL:-https://mcp.linkedin-ads.example.com/v1}",
+      "headers": {
+        "Authorization": "Bearer ${LINKEDIN_ADS_ACCESS_TOKEN}",
+        "X-Ad-Account-ID": "${LINKEDIN_ADS_ACCOUNT_ID}"
+      }
     }
   }
 }

@@ -13,6 +13,21 @@ export GOOGLE_ADS_ACCESS_TOKEN="your-oauth-token"
 export GOOGLE_ADS_DEVELOPER_TOKEN="your-developer-token"
 export GOOGLE_ADS_CUSTOMER_ID="123-456-7890"
 
+# Meta Ads (Facebook/Instagram)
+export META_ADS_MCP_URL="https://your-mcp-endpoint.com/meta-ads/v1"
+export META_ADS_ACCESS_TOKEN="your-access-token"
+export META_ADS_ACCOUNT_ID="act_123456789"
+
+# Reddit Ads
+export REDDIT_ADS_MCP_URL="https://your-mcp-endpoint.com/reddit-ads/v1"
+export REDDIT_ADS_ACCESS_TOKEN="your-access-token"
+export REDDIT_ADS_ACCOUNT_ID="t2_abc123"
+
+# LinkedIn Ads
+export LINKEDIN_ADS_MCP_URL="https://your-mcp-endpoint.com/linkedin-ads/v1"
+export LINKEDIN_ADS_ACCESS_TOKEN="your-access-token"
+export LINKEDIN_ADS_ACCOUNT_ID="123456789"
+
 # Google Analytics
 export GA4_MCP_URL="https://your-mcp-endpoint.com/analytics/v1"
 export GOOGLE_ACCESS_TOKEN="your-oauth-token"
@@ -42,6 +57,47 @@ Connect to analyze:
 **HTTP Endpoint:** `${GOOGLE_ADS_MCP_URL}`
 
 Setup: Requires Google Ads API access with read permissions. See [Google Ads API documentation](https://developers.google.com/google-ads/api/docs/start).
+
+### ~~meta-ads
+**Meta Ads API (Facebook/Instagram)** — Campaign performance, audience targeting, conversion tracking
+
+Connect to analyze:
+- Facebook and Instagram ad campaign performance
+- Audience targeting effectiveness
+- Ad creative performance and A/B test results
+- Conversion tracking and attribution
+- Customer acquisition cost (CAC) by campaign
+
+**HTTP Endpoint:** `${META_ADS_MCP_URL}`
+
+Setup: Requires Meta Marketing API access with `ads_read` permission. See [Meta Marketing API documentation](https://developers.facebook.com/docs/marketing-apis/).
+
+### ~~reddit-ads
+**Reddit Ads API** — Campaign performance, community targeting, conversion tracking
+
+Connect to analyze:
+- Reddit ad campaign performance
+- Subreddit and interest targeting effectiveness
+- Conversion tracking and attribution
+- Customer acquisition cost (CAC) by campaign
+
+**HTTP Endpoint:** `${REDDIT_ADS_MCP_URL}`
+
+Setup: Requires Reddit Ads API access. See [Reddit Ads API documentation](https://ads-api.reddit.com/docs/).
+
+### ~~linkedin-ads
+**LinkedIn Ads API** — Campaign performance, professional audience targeting, lead generation
+
+Connect to analyze:
+- LinkedIn ad campaign performance
+- Professional audience targeting effectiveness
+- Lead gen form performance
+- Conversion tracking and attribution
+- Customer acquisition cost (CAC) by campaign
+
+**HTTP Endpoint:** `${LINKEDIN_ADS_MCP_URL}`
+
+Setup: Requires LinkedIn Marketing API access with `r_ads_reporting` permission. See [LinkedIn Marketing API documentation](https://learn.microsoft.com/en-us/linkedin/marketing/).
 
 ### ~~analytics
 **Google Analytics 4** — Traffic sources, conversion funnels, page performance

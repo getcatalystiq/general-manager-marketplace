@@ -1,26 +1,11 @@
 ---
-description: SaaS metrics expertise for accurate MRR, churn, LTV, and CAC calculations
-triggers:
-  - MRR
-  - monthly recurring revenue
-  - ARR
-  - annual recurring revenue
-  - churn
-  - churn rate
-  - LTV
-  - lifetime value
-  - CAC
-  - customer acquisition cost
-  - unit economics
-  - cohort analysis
-  - net revenue retention
-  - NRR
-  - expansion revenue
+name: saas-metrics
+description: SaaS metrics expertise for accurate MRR, churn, LTV, and CAC calculations. Use when discussing revenue metrics, unit economics, cohort analysis, or growth health indicators like Rule of 40, Magic Number, and Quick Ratio.
 ---
 
 # SaaS Metrics Expertise
 
-This skill provides accurate definitions and calculation methods for core SaaS metrics. Use these standards when analyzing or discussing SaaS business performance.
+You are an expert at SaaS metrics, unit economics, and growth health analysis. You calculate MRR, churn, LTV, CAC, and cohort metrics accurately — and you know what the numbers mean for the business. When you spot a metric outside healthy ranges, you flag it immediately and recommend specific action.
 
 ## Monthly Recurring Revenue (MRR)
 
@@ -233,6 +218,58 @@ Quick Ratio = (New MRR + Expansion MRR) / (Churned MRR + Contraction MRR)
 | 1-2 | Slow growth |
 | 2-4 | Healthy growth |
 | > 4 | Excellent growth |
+
+## Red Flags — Flag These Immediately
+
+When you see any of these, surface them as urgent in `/tasks` or `/dashboard`:
+
+| Red Flag | Threshold | Recommended Action |
+|----------|-----------|-------------------|
+| **Negative net new MRR** | Net New MRR < $0 for any month | Diagnose: is it churn spike or growth stall? Separate the signals. |
+| **Net revenue churn is positive** | Net Revenue Churn > 0% | Expansion isn't covering losses. Prioritize retention over acquisition. |
+| **NRR below 90%** | NRR < 90% | The customer base is shrinking. This is existential — escalate immediately. |
+| **LTV:CAC below 1x** | LTV:CAC < 1.0 | Losing money on every customer. Pause paid acquisition and fix unit economics. |
+| **LTV:CAC above 5x** | LTV:CAC > 5.0 | Likely under-investing in growth. Recommend increasing acquisition spend. |
+| **CAC payback > 18 months** | Payback > 18 mo | Cash flow risk. Recommend raising prices, improving conversion, or reducing CAC. |
+| **Quick Ratio below 1** | Quick Ratio < 1.0 | Business is shrinking. Revenue lost exceeds revenue gained. |
+| **Rule of 40 below 20** | Score < 20 | Neither growing fast nor profitable. Strategic pivot may be needed. |
+| **Magic Number below 0.5** | Magic Number < 0.5 | Sales & marketing spend is inefficient. Optimize before scaling. |
+| **Cohort degradation** | Recent cohorts retain worse than older ones | Product-market fit may be weakening, or acquisition quality is declining. |
+
+## Decision Guidance
+
+### When to Focus on Growth vs Retention
+
+**Focus on growth when:**
+- NRR > 100% (existing base is self-sustaining)
+- LTV:CAC between 3-5x (unit economics are healthy)
+- Churn is within benchmarks for your segment
+- Quick Ratio > 2 (adding much more than losing)
+
+**Focus on retention when:**
+- NRR < 100% (base is eroding)
+- Logo churn is rising month-over-month
+- Recent cohorts retain worse than older ones
+- Quick Ratio < 2 (gains barely exceed losses)
+
+### When to Use MRR vs ARR
+
+- **Use MRR** when the business is majority monthly contracts, or when analyzing month-to-month trends
+- **Use ARR** when the business is majority annual/multi-year contracts, or when communicating with investors
+- **Never mix** — pick one and be consistent within an analysis
+
+### When to Raise the Alarm on Churn
+
+- SMB monthly logo churn > 5% — flag as high
+- Mid-market monthly logo churn > 2% — flag as high
+- Enterprise monthly logo churn > 1% — flag as high
+- Any segment with churn *accelerating* over 3+ months — flag regardless of absolute level
+
+### Blended CAC vs Channel CAC
+
+- **Use blended CAC** for overall business health checks and investor reporting
+- **Use channel CAC** for budget allocation decisions — always recommend shifting spend toward channels with the best LTV:CAC (not just lowest CAC)
+- When channels have very different LTV profiles, always weight by LTV, not just CAC
 
 ## Common Mistakes to Avoid
 

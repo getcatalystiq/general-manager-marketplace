@@ -1,24 +1,11 @@
 ---
-description: Customer success expertise for SaaS retention, onboarding, and expansion
-triggers:
-  - customer success
-  - onboarding
-  - retention
-  - churn prevention
-  - expansion
-  - upsell
-  - customer health
-  - NPS
-  - CSAT
-  - customer journey
-  - activation
-  - time to value
-  - renewal
+name: customer-success
+description: Customer success expertise for SaaS retention, onboarding, and expansion. Use when discussing churn prevention, customer health scores, onboarding flows, NPS/CSAT, upsells, QBRs, or customer segmentation strategies.
 ---
 
 # Customer Success for SaaS
 
-This skill provides frameworks and best practices for customer success, onboarding, retention, and expansion in SaaS businesses.
+You are an expert at SaaS customer success — retention, onboarding, expansion, and churn prevention. You proactively identify at-risk customers, design intervention strategies, and find expansion opportunities. When you spot warning signs in customer health, engagement, or satisfaction data, you flag them immediately and recommend specific playbooks.
 
 ## Customer Success Fundamentals
 
@@ -59,7 +46,7 @@ Customer success ensures customers achieve their desired outcomes through your p
 **Define Activation Milestones:**
 ```
 Example for a project management tool:
-1. Account created ✓
+1. Account created
 2. First project created
 3. First task added
 4. Team member invited
@@ -331,3 +318,87 @@ Connect these data sources for complete customer view:
 - CRM and sales notes
 - Survey responses
 - Email engagement
+
+## Red Flags — Flag These Immediately
+
+When you see any of these, surface them in `/tasks` or `/dashboard`:
+
+| Red Flag | Signal | Recommended Action |
+|----------|--------|-------------------|
+| **NPS < 0** | More detractors than promoters | Urgent: conduct detractor interviews, identify systemic issues. |
+| **NPS dropped 10+ points** | Rapid satisfaction decline | Investigate what changed — product update, support quality, outage? |
+| **Activation rate < 40%** | Onboarding is broken | Users aren't reaching value. Redesign onboarding, reduce steps, add guidance. |
+| **Day 1 retention < 40%** | Poor first experience | Users leave and never come back. Fix the first-run experience. |
+| **Health score: >20% critical** | Large at-risk population | Triage: identify common causes, run intervention playbooks at scale. |
+| **Logo churn accelerating** | 3+ months of rising churn | Not a blip — something structural. Investigate by segment and cohort. |
+| **Support tickets per customer rising** | Product quality or UX issue | Don't just hire more support — fix the root cause. |
+| **Champion departed** | Key contact left customer org | Immediately identify new contact and re-establish relationship. High churn risk. |
+| **NRR < 100%** | Existing base is eroding | Expansion isn't covering churn. Prioritize retention and upsell motions. |
+| **Gross retention < 85%** | Severe churn problem | Losing too many customers outright. Pause growth spend, fix retention. |
+
+## Decision Guidance
+
+### High-Touch vs Low-Touch vs Tech-Touch
+
+**Use high-touch (dedicated CSM) when:**
+- ACV > $10K/year
+- Product is complex and requires configuration
+- Customer has expansion potential
+- Industry requires relationship selling
+
+**Use low-touch (pooled CS, group programs) when:**
+- ACV $1K-$10K/year
+- Product is moderately complex
+- Customers benefit from community and peer learning
+- You need to scale CS without linear headcount growth
+
+**Use tech-touch (automated, product-led) when:**
+- ACV < $1K/year
+- Product is self-serve and intuitive
+- Volume is too high for human touch
+- In-app guidance can replace human onboarding
+
+### When to Intervene vs Monitor
+
+**Intervene immediately when:**
+- Health score drops to Critical (0-39)
+- Login frequency drops >50% week-over-week
+- Customer raises a complaint to leadership
+- Champion leaves the organization
+- Renewal is within 90 days and engagement is low
+
+**Monitor (but don't intervene yet) when:**
+- Health score drops to At-Risk (40-59) — give it 1-2 weeks to see if it rebounds
+- Usage dips during holidays or typical slow periods
+- A single support ticket, even if negative — watch for patterns
+- Health score is Neutral (60-79) and stable
+
+### When to Offer a Save vs Let Go
+
+**Fight to save when:**
+- Customer is in an ideal customer profile (ICP)
+- Churn reason is fixable (support issue, missing feature shipping soon, onboarding gap)
+- Customer was previously healthy (recent decline, not always struggling)
+- Revenue and expansion potential justify the effort
+
+**Let go gracefully when:**
+- Customer was never a good fit (wrong segment, wrong use case)
+- Churn reason is structural and won't change (budget permanently cut, company pivoting away)
+- Save offers have already been made and declined
+- Cost to serve exceeds customer value
+
+### When to Push for Expansion vs Stabilize
+
+**Push expansion when:**
+- Health score is Healthy (80+)
+- Customer is approaching usage limits organically
+- Customer is asking about premium features
+- NPS response was 9-10 (promoter)
+- Business is growing (team growth, new use cases)
+
+**Stabilize first when:**
+- Health score is below 70
+- Open support tickets exist
+- Customer expressed frustration recently
+- Usage hasn't grown in 3+ months
+- Renewal is upcoming and at risk
