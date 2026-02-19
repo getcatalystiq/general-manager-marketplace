@@ -7,12 +7,12 @@
     {
       "name": "online-business",
       "source": "./online-business",
-      "description": "Manage your online business growth with AI-powered analysis of ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds."
+      "description": "1Manage your online business growth with AI-powered analysis of ads, content performance, conversion funnels, and growth metrics. Stop juggling dashboards—get actionable insights in seconds."
     },
     {
       "name": "freight-forwarders",
       "source": "./freight-forwarders",
-      "description": "Manage freight forwarding operations with AI-powered shipment tracking, rate analysis, customs documentation, and carrier management. Streamline logistics workflows and optimize your supply chain."
+      "description": "1Manage freight forwarding operations with AI-powered shipment tracking, rate analysis, customs documentation, and carrier management. Streamline logistics workflows and optimize your supply chain."
     }
   ]
 }
